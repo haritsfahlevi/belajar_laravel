@@ -19,4 +19,4 @@ Route::get('/task', 'TasksController@add');
 Route::post('/task', 'TasksController@create');
 
 Route::get('/task/{task}', 'TasksController@edit');
-Route::get('/task/{task}', 'TasksController@update');
+Route::post('/task/{task}', 'TasksController@update');
