@@ -26,13 +26,13 @@ class TasksController extends Controller
     	$task->description=$request->description;
     	$task->user_id=Auth::id();
     	$task->save();
-    	return redirect ('/')
+    	return redirect ('/');
 
     }
 
     public function edit(Task $task)
     {
-    	if (Auth::check() && Auth::user()->id == task->user_id) {
+    	if (Auth::check() && Auth::user()->id == $task->user_id) {
     		return view('edit', compact('task'));
     	}
     	else{
