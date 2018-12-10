@@ -15,7 +15,11 @@ class CreateModelKontaksTable extends Migration
     {
         Schema::create('model_kontaks', function (Blueprint $table) {
             $table->increments('id');
-            $table->timestamps();
+            $table->string('nama'); //membuat kolom nama
+            $table->string('email'); //membuat kolom email
+            $table->string('nohp'); //membuat kolom no hp
+            $table->text('alamat'); //membuat kolom alamat dengan tipe text
+            $table->timestamps(); //membuat kolom created_at dan updated_at sebagai fungsi dasar laravel
         });
     }
 
