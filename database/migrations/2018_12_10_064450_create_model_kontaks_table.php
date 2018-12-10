@@ -13,7 +13,7 @@ class CreateModelKontaksTable extends Migration
      */
     public function up()
     {
-        Schema::create('model_kontaks', function (Blueprint $table) {
+        Schema::create('kontak', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nama'); //membuat kolom nama
             $table->string('email'); //membuat kolom email
