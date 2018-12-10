@@ -11,6 +11,8 @@
 |
 */
 
+Route::resource('kontak','Kontak'); //tambahkan baris ini
+
 Route::get('/', function () {
     return view('index');
 });
